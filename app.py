@@ -16,6 +16,7 @@ def setup_logging():
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     )
 
+
 def initialize_components() -> Tuple[Config, DataLoader, Retriever, LLMClient]:
     """Initialize all required components"""
     try:
