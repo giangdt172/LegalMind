@@ -22,7 +22,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-TOGETHER_API_KEY = '6029667f7ff11510b9432d899196f9704d2e982a9a1fa2af35b621b4025514a5'
+TOGETHER_API_KEY = 'API_KEY'
 
 @st.cache_resource
 def load_model():
