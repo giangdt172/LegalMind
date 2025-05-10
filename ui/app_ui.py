@@ -15,7 +15,6 @@ class AppUI:
         st.markdown(CSSStyles.get_styles(), unsafe_allow_html=True)
     
     def render_header(self):
-        """Render the page header"""
         st.markdown("""
         <div class="main-header">
             <h1>LEGAL MIND ⚖️</h1>
@@ -24,7 +23,6 @@ class AppUI:
         """, unsafe_allow_html=True)
     
     def render_sidebar(self):
-        """Render the sidebar"""
         st.sidebar.markdown("""
         <div style="text-align: center; padding: 15px; background: linear-gradient(135deg, #4b6584 0%, #7d95b6 100%); border-radius: 10px; margin-bottom: 20px;">
             <h2 style="color: white; margin: 0; font-size: 1.5rem;">⚖️ LEGAL MIND</h2>
@@ -61,7 +59,6 @@ class AppUI:
         return app_mode
     
     def render(self):
-        """Render the main application UI"""
         self.apply_css_styles()
         self.render_header()
         app_mode = self.render_sidebar()
