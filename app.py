@@ -2,7 +2,6 @@ import os
 import shutil
 import streamlit as st
 
-# Set page config as first command
 st.set_page_config(
     page_title="LEGAL MIND",
     page_icon="⚖️",
