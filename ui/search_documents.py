@@ -7,7 +7,6 @@ class SearchDocumentsUI:
         self.retriever = Retriever()
     
     def render(self):
-        """Render the document search UI"""
         df, index = self.data_loader.get_data()
         
         st.markdown("<h2 style='color: #4b6584;'>🔍 Tìm kiếm tài liệu pháp luật</h2>", unsafe_allow_html=True)
@@ -34,7 +33,6 @@ class SearchDocumentsUI:
         self._handle_search(query, search_button, index, df, k)
     
     def _handle_search(self, query, search_button, index, df, k):
-        """Handle search logic and display results"""
         if search_button or query:
             if query:
                 with st.spinner("Đang tìm kiếm tài liệu liên quan..."):
