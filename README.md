@@ -1,5 +1,5 @@
 # LEGAL MIND
-Ứng dụng Hỗ trợ truy vẫn và hỏi đáp về pháp luật
+A Legal Query and Q&A Support Application 
 
 
 ## Project Structure
@@ -24,21 +24,21 @@
 
 ## Environment Variables
 
-Cần tạo file `.env` chứa API của Gemini (hoặc TogetherAI nếu muốn sử dụng model LLama/DeepSeek):
-
+Create a file named `.env` containing your API keys for Gemini (or TogetherAI if you prefer to use the LLama/DeepSeek model):  
 ```
 TOGETHER_API_KEY= your_together_api_key
 GEMINI_API_KEY= your_gemini_api_key
 ```
 
-## Hướng dẫn chạy ứng dụng
-Cài đặt các thư viện cần thiết:
+## How to Run the Application  
+Install the required packages:  
 ```bash
 pip install -r requirements.txt
 ```
-Trong terminal chạy lệnh sau:
+Then launch the Streamlit app:
 ```bash
 python -m streamlit run app.py
 ```
 
-## Dataset được sử dụng lại từ cuộc thi nên có thể không chính xác và cập nhật mới nhất
+# Note on the Dataset
+The dataset is reused from a competition and may not be fully accurate or up-to-date.
