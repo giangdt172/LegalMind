@@ -26,7 +26,7 @@ class LLMService:
             if context:
                 response = _self.client.models.generate_content(
                     model=_self.config.LLM_MODEL,
-                    contents=f"Bạn là một người hiểu rất rõ về luật pháp của Việt Nam. Hãy dựa vào câu hỏi được cung cấp để trả lời câu hỏi theo luật Việt Nam mới nhất 2025. Nếu không có thông tin đủ để trả lời, hãy nói rõ điều đó.Câu hỏi: {query}.  Chú ý chỉ đưa thông tin liên quan, không cần lời khuyên và disclaimer"
+                    contents=f"Bạn là một người hiểu rất rõ về luật pháp của Việt Nam. Hãy dựa vào câu hỏi và thông tin bổ sung được cung cấp để trả lời vể pháp luật Việt Nam mới nhất 2025. Nếu không có thông tin đủ để trả lời, hãy nói rõ điều đó. Câu hỏi: {query}. Thông tin bổ sung: {context}. Chú ý chỉ đưa thông tin liên quan, không cần lời khuyên và disclaimer"
                 )
             else:
                 response = _self.client.models.generate_content(
